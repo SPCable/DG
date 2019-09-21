@@ -22,13 +22,29 @@ namespace Demo
         {
             Application.Exit();
         }
-
+        int dem = 0;
         private void Button1_Click(object sender, EventArgs e)
         {
             SoundMannager.PlaySoundEF("CorrectSFX.wav");
-            //this.Hide();
-            GiaoDienGame uig = new GiaoDienGame();
-           // uig.Show();
+            GiaoDienGame uig = new GiaoDienGame();       
+            if(string.IsNullOrWhiteSpace(txtTenNguoiChoi.Text))
+            {
+                txtLoicuathay.Text = "Em chưa nhập tên kìa!";        
+                if(dem==3)
+                {
+                    txtLoicuathay.Font = new Font(txtLoicuathay.Font.FontFamily, 12);
+                    txtLoicuathay.Text = "Chưa nhập tên kìa con đĩ lồn!";
+                }
+                else
+                {
+                    dem++;
+                }
+            }
+            else
+            {
+                this.Hide();
+                uig.Show();
+            }
         }
         void Back()
         {
@@ -39,6 +55,8 @@ namespace Demo
             picmusicmute.Hide();
             PlayMusic();
             picmute.Hide();
+            txtLoicuathay.Text = "Thầy chào các em!";
+            txtLoicuathay.Enabled = false;
         }
 
         private void BtnPlayA_Click(object sender, EventArgs e)
@@ -110,6 +128,11 @@ namespace Demo
                 sound.controls.play();
                 sound.enabled = !sound.enabled;
             }
+        }
+
+        private void TxtLoicuathay_OnValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
