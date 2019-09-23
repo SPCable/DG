@@ -11,11 +11,16 @@ using WMPLib;
 
 namespace Demo
 {
+
     public partial class GiaoDien : Form
     {
+        Timer timetuongtac;
         public GiaoDien()
         {
             InitializeComponent();
+            timetuongtac = new Timer();
+            timetuongtac.Tick += Timett_Tick;
+            timetuongtac.Interval = 1000;
         }
 
         private void PictureBox1_Click(object sender, EventArgs e)
@@ -25,12 +30,11 @@ namespace Demo
         int dem = 0;
         private void Button1_Click(object sender, EventArgs e)
         {
-            SoundMannager.PlaySoundEF("CorrectSFX.wav");
-            GiaoDienGame uig = new GiaoDienGame();       
+            SoundMannager.PlaySoundEF("CorrectSFX.wav");     
             if(string.IsNullOrWhiteSpace(txtTenNguoiChoi.Text))
             {
                 txtLoicuathay.Text = "Em chưa nhập tên kìa!";        
-                if(dem==3)
+                if(dem==20)
                 {
                     txtLoicuathay.Font = new Font(txtLoicuathay.Font.FontFamily, 12);
                     txtLoicuathay.Text = "Chưa nhập tên kìa con đĩ lồn!";
@@ -42,9 +46,28 @@ namespace Demo
             }
             else
             {
-                this.Hide();
-                uig.Show();
+                //this.Hide();
+                //uig.Show();
+                label1.Hide();
+                picBXH.Hide();
+                txtTenNguoiChoi.Hide();
+                HienChonGoi();// ẩn đi để show màn hình chọn gói câu hỏi
+                btnStart.Hide();
+
             }
+        }
+        void HienChonGoi()
+        {
+            picEasy.Show();
+            picMedium.Show();
+            picHard.Show();
+            txtLoicuathay.Font = new Font(txtLoicuathay.Font.FontFamily, 13);
+            txtLoicuathay.Text = "Chào em " +txtTenNguoiChoi.Text+ "!";
+            timetuongtac.Enabled = !timetuongtac.Enabled;
+            lb1.Show();
+            lb2.Show();
+            lb3.Show();
+            
         }
         void Back()
         {
@@ -52,9 +75,16 @@ namespace Demo
         }
         private void GiaoDien_Load(object sender, EventArgs e)
         {
+            timetuongtac.Enabled = !timetuongtac.Enabled;
             picmusicmute.Hide();
             PlayMusic();
             picmute.Hide();
+            picEasy.Hide();
+            picMedium.Hide();
+            lb1.Hide();
+            lb2.Hide();
+            lb3.Hide();
+            picHard.Hide();
             txtLoicuathay.Text = "Thầy chào các em!";
             txtLoicuathay.Enabled = false;
         }
@@ -133,6 +163,38 @@ namespace Demo
         private void TxtLoicuathay_OnValueChanged(object sender, EventArgs e)
         {
 
+        }
+        int t = 0;
+        private void Timett_Tick(object sender, EventArgs e)
+        {
+            t++;
+            if(t==3)
+            {
+                txtLoicuathay.Font = new Font(txtLoicuathay.Font.FontFamily, 10);
+                txtLoicuathay.Text = "Bấm ? để xem hướng dẫn nha em!";
+                timetuongtac.Enabled = !timetuongtac.Enabled;
+            }
+            if (t==5)
+            {
+                txtLoicuathay.Font = new Font(txtLoicuathay.Font.FontFamily, 13);
+                txtLoicuathay.Text = "Mời em chọn gói câu hỏi";
+                timetuongtac.Enabled = !timetuongtac.Enabled;
+            }
+        }
+
+        private void PicBXH_Click(object sender, EventArgs e)
+        {
+
+        }
+        void HienThiUIG()
+        {
+            GiaoDienGame uig = new GiaoDienGame();
+            this.Hide();
+            uig.Show();
+        }
+        private void PicEasy_Click(object sender, EventArgs e)
+        {
+            HienThiUIG();
         }
     }
 }

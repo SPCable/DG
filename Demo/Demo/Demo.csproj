@@ -143,5 +143,17 @@
   <ItemGroup>
     <None Include="Resources\478857-200.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stand-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poro-blush.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poro-coolguy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poro-sweat.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
