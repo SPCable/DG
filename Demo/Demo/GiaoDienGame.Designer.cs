@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbTime = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.btnPlayA = new System.Windows.Forms.Button();
@@ -43,16 +44,15 @@
             this.picHeart3 = new System.Windows.Forms.PictureBox();
             this.picHeart2 = new System.Windows.Forms.PictureBox();
             this.picHeart1 = new System.Windows.Forms.PictureBox();
-            this.picTest = new System.Windows.Forms.PictureBox();
+            this.Hinh = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picHeart3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picHeart2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picHeart1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picTest)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Hinh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -70,6 +70,16 @@
             this.panel1.Size = new System.Drawing.Size(668, 37);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Demo.Properties.Resources.error_1_;
+            this.pictureBox1.Location = new System.Drawing.Point(631, 1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(34, 36);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
             // 
             // lbTime
             // 
@@ -204,15 +214,14 @@
             this.picHeart1.TabIndex = 12;
             this.picHeart1.TabStop = false;
             // 
-            // picTest
+            // Hinh
             // 
-            this.picTest.Image = global::Demo.Properties.Resources.animation_3993429__340;
-            this.picTest.Location = new System.Drawing.Point(248, 93);
-            this.picTest.Name = "picTest";
-            this.picTest.Size = new System.Drawing.Size(177, 151);
-            this.picTest.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picTest.TabIndex = 9;
-            this.picTest.TabStop = false;
+            this.Hinh.Location = new System.Drawing.Point(248, 93);
+            this.Hinh.Name = "Hinh";
+            this.Hinh.Size = new System.Drawing.Size(177, 151);
+            this.Hinh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Hinh.TabIndex = 9;
+            this.Hinh.TabStop = false;
             // 
             // pictureBox2
             // 
@@ -223,16 +232,6 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Demo.Properties.Resources.error_1_;
-            this.pictureBox1.Location = new System.Drawing.Point(631, 1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(34, 36);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
             // 
             // GiaoDienGame
             // 
@@ -246,7 +245,7 @@
             this.Controls.Add(this.picHeart2);
             this.Controls.Add(this.picHeart1);
             this.Controls.Add(this.txtAnswer);
-            this.Controls.Add(this.picTest);
+            this.Controls.Add(this.Hinh);
             this.Controls.Add(this.lbScore);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnNext);
@@ -260,12 +259,12 @@
             this.Text = "GiaoDienGame";
             this.Load += new System.EventHandler(this.GiaoDienGame_Load);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picHeart3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picHeart2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picHeart1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picTest)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Hinh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -284,7 +283,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnNext;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtAnswer;
-        private System.Windows.Forms.PictureBox picTest;
+        private System.Windows.Forms.PictureBox Hinh;
         private System.Windows.Forms.PictureBox picHeart1;
         private System.Windows.Forms.PictureBox picHeart3;
         private System.Windows.Forms.PictureBox picHeart2;
