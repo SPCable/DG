@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Database.cs" />
+    <Compile Include="FileMannager.cs" />
     <Compile Include="GiaoDien.cs">
       <SubType>Form</SubType>
     </Compile>
