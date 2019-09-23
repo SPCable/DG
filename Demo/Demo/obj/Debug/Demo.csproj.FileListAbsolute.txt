@@ -42,3 +42,8 @@ C:\Users\nnhat\Documents\GitHub\DemoGame\Demo\Demo\obj\Debug\Demo.csproj.CoreCom
 C:\Users\nnhat\Documents\GitHub\DemoGame\Demo\Demo\obj\Debug\Demo.csproj.CopyComplete
 C:\Users\nnhat\Documents\GitHub\DemoGame\Demo\Demo\obj\Debug\Demo.exe
 C:\Users\nnhat\Documents\GitHub\DemoGame\Demo\Demo\obj\Debug\Demo.pdb
+C:\project\Live lone\Dgg\DG\Demo\Demo\bin\Debug\Demo.exe.config
+C:\project\Live lone\Dgg\DG\Demo\Demo\obj\Debug\Interop.WMPLib.dll
+C:\project\Live lone\Dgg\DG\Demo\Demo\obj\Debug\Demo.csproj.ResolveComReference.cache
+C:\project\Live lone\Dgg\DG\Demo\Demo\obj\Debug\Demo.exe
+C:\project\Live lone\Dgg\DG\Demo\Demo\obj\Debug\Demo.pdb
