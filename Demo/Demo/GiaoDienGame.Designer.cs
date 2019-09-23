@@ -222,6 +222,7 @@
             this.Hinh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Hinh.TabIndex = 9;
             this.Hinh.TabStop = false;
+            this.Hinh.Click += new System.EventHandler(this.Hinh_Click_1);
             // 
             // pictureBox2
             // 

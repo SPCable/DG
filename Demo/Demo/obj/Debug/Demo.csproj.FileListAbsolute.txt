@@ -42,3 +42,16 @@ C:\Users\nnhat\Documents\GitHub\DemoGame\Demo\Demo\obj\Debug\Demo.csproj.CoreCom
 C:\Users\nnhat\Documents\GitHub\DemoGame\Demo\Demo\obj\Debug\Demo.csproj.CopyComplete
 C:\Users\nnhat\Documents\GitHub\DemoGame\Demo\Demo\obj\Debug\Demo.exe
 C:\Users\nnhat\Documents\GitHub\DemoGame\Demo\Demo\obj\Debug\Demo.pdb
+C:\project\Live lone\Dgg\DG\Demo\Demo\bin\Debug\Demo.exe.config
+C:\project\Live lone\Dgg\DG\Demo\Demo\obj\Debug\Interop.WMPLib.dll
+C:\project\Live lone\Dgg\DG\Demo\Demo\obj\Debug\Demo.csproj.ResolveComReference.cache
+C:\project\Live lone\Dgg\DG\Demo\Demo\obj\Debug\Demo.exe
+C:\project\Live lone\Dgg\DG\Demo\Demo\obj\Debug\Demo.pdb
+C:\project\Live lone\Dgg\DG\Demo\Demo\bin\Debug\Demo.exe
+C:\project\Live lone\Dgg\DG\Demo\Demo\bin\Debug\Demo.pdb
+C:\project\Live lone\Dgg\DG\Demo\Demo\bin\Debug\Bunifu_UI_v1.5.3.xml
+C:\project\Live lone\Dgg\DG\Demo\Demo\obj\Debug\Demo.csprojResolveAssemblyReference.cache
+C:\project\Live lone\Dgg\DG\Demo\Demo\obj\Debug\Demo.GiaoDien.resources
+C:\project\Live lone\Dgg\DG\Demo\Demo\obj\Debug\Demo.GiaoDienGame.resources
+C:\project\Live lone\Dgg\DG\Demo\Demo\obj\Debug\Demo.Properties.Resources.resources
+C:\project\Live lone\Dgg\DG\Demo\Demo\obj\Debug\Demo.csproj.GenerateResource.Cache

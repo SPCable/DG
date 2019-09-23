@@ -90,9 +90,9 @@ namespace Demo
             } while (check == false);
             if (usedindex == listusedindex.Length - 1)
             {
-                MessageBox.Show("Het hinh roi du con di me em bam quai!!!");
+                MessageBox.Show("Hết hình rồi em!!!");
             }
-
+            //nhoihnoihnoihnoihniujhnouljjhyvbiy
         }
 
         private void LbQuestion_Click(object sender, EventArgs e)
@@ -134,6 +134,11 @@ namespace Demo
         }
 
         private void Hinh_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Hinh_Click_1(object sender, EventArgs e)
         {
 
         }
