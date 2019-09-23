@@ -92,7 +92,7 @@ namespace Demo
             {
                 MessageBox.Show("Hết hình rồi em!!!");
             }
-
+            //nhoihnoihnoihnoihniujhnouljjhyvbiy
         }
 
         private void LbQuestion_Click(object sender, EventArgs e)
